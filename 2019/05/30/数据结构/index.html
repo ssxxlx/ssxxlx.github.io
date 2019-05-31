@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="数据结构 ，c++,">
+  <meta name="keywords" content="c++,数据结构,">
 
 
 
@@ -80,7 +80,7 @@
 
 
 <meta name="description" content="数据结构综述数据结构是计算机存储、组织数据的方式。数据结构是指相互之间存在一种或多种特定关系的数据元素的集合。通常情况下，精心选择的数据结构可以带来更高的运行或者存储效率。数据结构往往同高效的检索算法和索引技术有关。（源自百度百科） 简单来说，数据结构数据结构，就是数据+结构。数据呢，就是存在的东西，具有一定意义的单位。对于结构来说，我了解的就是包括三方面的内容，数据的逻辑结构，存储结构以及数据的">
-<meta name="keywords" content="数据结构 ，c++">
+<meta name="keywords" content="c++,数据结构">
 <meta property="og:type" content="article">
 <meta property="og:title" content="数据结构学习">
 <meta property="og:url" content="https://ssxxlx.github.io/2019/05/30/数据结构/index.html">
@@ -88,7 +88,7 @@
 <meta property="og:description" content="数据结构综述数据结构是计算机存储、组织数据的方式。数据结构是指相互之间存在一种或多种特定关系的数据元素的集合。通常情况下，精心选择的数据结构可以带来更高的运行或者存储效率。数据结构往往同高效的检索算法和索引技术有关。（源自百度百科） 简单来说，数据结构数据结构，就是数据+结构。数据呢，就是存在的东西，具有一定意义的单位。对于结构来说，我了解的就是包括三方面的内容，数据的逻辑结构，存储结构以及数据的">
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="https://ssxxlx.github.io/2019/05/30/source/数据结构学习.png">
-<meta property="og:updated_time" content="2019-05-30T11:14:31.168Z">
+<meta property="og:updated_time" content="2019-05-31T07:17:29.575Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="数据结构学习">
 <meta name="twitter:description" content="数据结构综述数据结构是计算机存储、组织数据的方式。数据结构是指相互之间存在一种或多种特定关系的数据元素的集合。通常情况下，精心选择的数据结构可以带来更高的运行或者存储效率。数据结构往往同高效的检索算法和索引技术有关。（源自百度百科） 简单来说，数据结构数据结构，就是数据+结构。数据呢，就是存在的东西，具有一定意义的单位。对于结构来说，我了解的就是包括三方面的内容，数据的逻辑结构，存储结构以及数据的">
@@ -111,9 +111,9 @@
       author: '博主'
     },
     algolia: {
-      applicationID: '',
-      apiKey: '',
-      indexName: '',
+      applicationID: '‘WN1SEE8U32’',
+      apiKey: '’146fef70c2422c3555946f518815d743‘',
+      indexName: '‘index_name_github’',
       hits: {"per_page":10},
       labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
     }
@@ -134,6 +134,16 @@
 
 
 
+
+  <script type="text/javascript">
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "https://hm.baidu.com/hm.js?3134be93b45d1e897a35d906c950eb4a";
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
+  </script>
 
 
 
@@ -184,7 +194,7 @@
       
         
         <li class="menu-item menu-item-home">
-          <a href="/首页" rel="section">
+          <a href="/" rel="section">
             
               <i class="menu-item-icon fa fa-fw fa-question-circle"></i> <br>
             
@@ -194,7 +204,7 @@
       
         
         <li class="menu-item menu-item-archives">
-          <a href="/归档" rel="section">
+          <a href="/archives" rel="section">
             
               <i class="menu-item-icon fa fa-fw fa-question-circle"></i> <br>
             
@@ -203,8 +213,18 @@
         </li>
       
         
+        <li class="menu-item menu-item-about">
+          <a href="/about" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-question-circle"></i> <br>
+            
+            关于
+          </a>
+        </li>
+      
+        
         <li class="menu-item menu-item-categories">
-          <a href="/分类" rel="section">
+          <a href="/categories" rel="section">
             
               <i class="menu-item-icon fa fa-fw fa-question-circle"></i> <br>
             
@@ -214,7 +234,7 @@
       
         
         <li class="menu-item menu-item-tags">
-          <a href="/标签" rel="section">
+          <a href="/tags" rel="section">
             
               <i class="menu-item-icon fa fa-fw fa-question-circle"></i> <br>
             
@@ -222,21 +242,49 @@
           </a>
         </li>
       
-        
-        <li class="menu-item menu-item-about">
-          <a href="/关于" rel="section">
+
+      
+        <li class="menu-item menu-item-search">
+          
+            <a href="javascript:;" class="popup-trigger">
+          
             
-              <i class="menu-item-icon fa fa-fw fa-question-circle"></i> <br>
+              <i class="menu-item-icon fa fa-search fa-fw"></i> <br>
             
-            关于
+            搜索
           </a>
         </li>
-      
-
       
     </ul>
   
 
+  
+    <div class="site-search">
+      
+  
+  <div class="algolia-popup popup search-popup">
+    <div class="algolia-search">
+      <div class="algolia-search-input-icon">
+        <i class="fa fa-search"></i>
+      </div>
+      <div class="algolia-search-input" id="algolia-search-input"></div>
+    </div>
+
+    <div class="algolia-results">
+      <div id="algolia-stats"></div>
+      <div id="algolia-hits"></div>
+      <div id="algolia-pagination" class="algolia-pagination"></div>
+    </div>
+
+    <span class="popup-btn-close">
+      <i class="fa fa-times-circle"></i>
+    </span>
+  </div>
+
+
+
+
+    </div>
   
 </nav>
 
@@ -304,6 +352,28 @@
             
           </span>
 
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/技术/" itemprop="url" rel="index">
+                    <span itemprop="name">技术</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
           
 
           
@@ -383,7 +453,9 @@
       
         <div class="post-tags">
           
-            <a href="/tags/数据结构-，c/" rel="tag"># 数据结构 ，c++</a>
+            <a href="/tags/c/" rel="tag"># c++</a>
+          
+            <a href="/tags/数据结构/" rel="tag"># 数据结构</a>
           
         </div>
       
@@ -406,6 +478,12 @@
 
 
     <div class="post-spread">
+      
+        
+<script>
+  with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='//bdimg.share.baidu.com/static/api/js/share.js?cdnversion='+~(-new Date()/36e5)];
+</script>
+
       
     </div>
   </div>
@@ -470,7 +548,7 @@
             
               <div class="site-state-item site-state-posts">
               
-                <a href="/归档">
+                <a href="/archives">
               
                   <span class="site-state-item-count">1</span>
                   <span class="site-state-item-name">日志</span>
@@ -479,15 +557,24 @@
             
 
             
+              
+              
+              <div class="site-state-item site-state-categories">
+                <a href="/categories/index.html">
+                  <span class="site-state-item-count">1</span>
+                  <span class="site-state-item-name">分类</span>
+                </a>
+              </div>
+            
 
             
               
               
               <div class="site-state-item site-state-tags">
-                
-                  <span class="site-state-item-count">1</span>
+                <a href="/tags/index.html">
+                  <span class="site-state-item-count">2</span>
                   <span class="site-state-item-name">标签</span>
-                
+                </a>
               </div>
             
 
@@ -771,6 +858,19 @@
   
 
 
+
+
+  
+  
+  
+  <link rel="stylesheet" href="/lib/algolia-instant-search/instantsearch.min.css">
+
+  
+  
+  <script src="/lib/algolia-instant-search/instantsearch.min.js"></script>
+  
+
+  <script src="/js/src/algolia-search.js?v=5.1.4"></script>
 
 
 
